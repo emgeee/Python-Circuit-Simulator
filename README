@@ -1,0 +1,21 @@
+
+myspice.py reads in a SPICE compatible file, analyzes the netlist for errors,
+then runs a simulation on the circuit if it is of a series topology. The
+program uses Euler's method for it's analyzes and displays a plot of the
+voltage versus time.
+
+Required Software:
+	Python 2.7
+	matplotlib
+	numpy
+
+FEATURES:
+	Sanity check using ngspice - the spice simulation was run using
+		ngspice and the results were compared to the developed
+		script.
+
+KNOWN ISSUES:
+	There appears to be a descrepency in precision between between floating
+	points in Python and whatever langauge generated the sample reports file.
+	The values appear to be slightly different different due to differences
+	in rounding and precision between the two languages.

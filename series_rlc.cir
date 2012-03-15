@@ -1,0 +1,14 @@
+Simple RLC Circuit Simulation
+*Sources
+V1 1 0 DC 10V AC 1V
+*Network Elements
+R1 1 2 500
+L1 2 3 1H IC=0mA
+C1 3 0 1uF IC=0V
+*Control Statements
+.op
+*tf command not availabe in the interactive spice
+.tran 0.1ms 20ms UIC
+.PRINT tran v(3)
+.PLOT tran v(3)
+.end

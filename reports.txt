@@ -1,0 +1,20 @@
+Input File: parallel_rlc.cir
+Title: * gnetlist -g spice-sdb -o parallel_rlc.cir parallel_rlc.sch
+Topology: parallel RLC
+------------------------------------------------
+Node Report
+------------------------------------------------
+Number of Nodes: 2
+Node  # Connections  Elements 
+0     4              C1, L1, R1, V1
+1     4              C1, L1, R1, V1
+
+------------------------------------------------
+Component Report
+------------------------------------------------
+Type            Name    Value   Other Attributes
+Capacitor       C1      1.0e-6                  
+Inductor        L1      50.0e-3                 
+Resistor        R1      500.0                   
+Voltage Source  V1      5.0                     
+
